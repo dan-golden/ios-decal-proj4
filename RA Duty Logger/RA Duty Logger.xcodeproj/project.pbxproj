@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65A268531C13BD67002C714F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A268521C13BD67002C714F /* AppDelegate.swift */; };
+		65A268581C13BD67002C714F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A268561C13BD67002C714F /* Main.storyboard */; };
+		65A2685B1C13BD67002C714F /* RA_Duty_Logger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65A268591C13BD67002C714F /* RA_Duty_Logger.xcdatamodeld */; };
+		65A2685D1C13BD67002C714F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A2685C1C13BD67002C714F /* Assets.xcassets */; };
+		65A268601C13BD67002C714F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A2685E1C13BD67002C714F /* LaunchScreen.storyboard */; };
+		65A2686B1C13BD67002C714F /* RA_Duty_LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A2686A1C13BD67002C714F /* RA_Duty_LoggerTests.swift */; };
+		65A268761C13BD67002C714F /* RA_Duty_LoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A268751C13BD67002C714F /* RA_Duty_LoggerUITests.swift */; };
+		65A268841C13C1BD002C714F /* MainScreenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A268831C13C1BD002C714F /* MainScreenTableViewController.swift */; };
+		65A268861C13C339002C714F /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A268851C13C339002C714F /* Template.swift */; };
+		65A268881C13C402002C714F /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A268871C13C402002C714F /* Report.swift */; };
+		65A2688A1C13CB76002C714F /* ReportItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A268891C13CB76002C714F /* ReportItem.swift */; };
+		65C2A0DD1C14114000D07445 /* TitleEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2A0DC1C14114000D07445 /* TitleEntryCell.swift */; };
+		65C7B6631C13DD4800589EBF /* NewTemplateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C7B6621C13DD4800589EBF /* NewTemplateTableViewController.swift */; };
+		65C7B6691C13ECF800589EBF /* TemplateItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C7B6681C13ECF800589EBF /* TemplateItemTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65A268671C13BD67002C714F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65A268471C13BD67002C714F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65A2684E1C13BD67002C714F;
+			remoteInfo = "RA Duty Logger";
+		};
+		65A268721C13BD67002C714F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65A268471C13BD67002C714F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65A2684E1C13BD67002C714F;
+			remoteInfo = "RA Duty Logger";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65A2684F1C13BD67002C714F /* RA Duty Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RA Duty Logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65A268521C13BD67002C714F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65A268571C13BD67002C714F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65A2685A1C13BD67002C714F /* RA_Duty_Logger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RA_Duty_Logger.xcdatamodel; sourceTree = "<group>"; };
+		65A2685C1C13BD67002C714F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65A2685F1C13BD67002C714F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65A268611C13BD67002C714F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65A268661C13BD67002C714F /* RA Duty LoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RA Duty LoggerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65A2686A1C13BD67002C714F /* RA_Duty_LoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RA_Duty_LoggerTests.swift; sourceTree = "<group>"; };
+		65A2686C1C13BD67002C714F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65A268711C13BD67002C714F /* RA Duty LoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RA Duty LoggerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65A268751C13BD67002C714F /* RA_Duty_LoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RA_Duty_LoggerUITests.swift; sourceTree = "<group>"; };
+		65A268771C13BD67002C714F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65A268831C13C1BD002C714F /* MainScreenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenTableViewController.swift; sourceTree = "<group>"; };
+		65A268851C13C339002C714F /* Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		65A268871C13C402002C714F /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		65A268891C13CB76002C714F /* ReportItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportItem.swift; sourceTree = "<group>"; };
+		65C2A0DC1C14114000D07445 /* TitleEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleEntryCell.swift; sourceTree = "<group>"; };
+		65C7B6621C13DD4800589EBF /* NewTemplateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTemplateTableViewController.swift; sourceTree = "<group>"; };
+		65C7B6681C13ECF800589EBF /* TemplateItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TemplateItemTableViewController.swift; path = ../TemplateItemTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65A2684C1C13BD67002C714F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65A268631C13BD67002C714F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65A2686E1C13BD67002C714F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65A268461C13BD67002C714F = {
+			isa = PBXGroup;
+			children = (
+				65A268511C13BD67002C714F /* RA Duty Logger */,
+				65A268691C13BD67002C714F /* RA Duty LoggerTests */,
+				65A268741C13BD67002C714F /* RA Duty LoggerUITests */,
+				65A268501C13BD67002C714F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65A268501C13BD67002C714F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65A2684F1C13BD67002C714F /* RA Duty Logger.app */,
+				65A268661C13BD67002C714F /* RA Duty LoggerTests.xctest */,
+				65A268711C13BD67002C714F /* RA Duty LoggerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65A268511C13BD67002C714F /* RA Duty Logger */ = {
+			isa = PBXGroup;
+			children = (
+				65C7B6681C13ECF800589EBF /* TemplateItemTableViewController.swift */,
+				65A268521C13BD67002C714F /* AppDelegate.swift */,
+				65A268561C13BD67002C714F /* Main.storyboard */,
+				65C7B6621C13DD4800589EBF /* NewTemplateTableViewController.swift */,
+				65A2685C1C13BD67002C714F /* Assets.xcassets */,
+				65A2685E1C13BD67002C714F /* LaunchScreen.storyboard */,
+				65A268611C13BD67002C714F /* Info.plist */,
+				65A268591C13BD67002C714F /* RA_Duty_Logger.xcdatamodeld */,
+				65A268831C13C1BD002C714F /* MainScreenTableViewController.swift */,
+				65C2A0DC1C14114000D07445 /* TitleEntryCell.swift */,
+				65A268891C13CB76002C714F /* ReportItem.swift */,
+				65A268871C13C402002C714F /* Report.swift */,
+				65A268851C13C339002C714F /* Template.swift */,
+			);
+			path = "RA Duty Logger";
+			sourceTree = "<group>";
+		};
+		65A268691C13BD67002C714F /* RA Duty LoggerTests */ = {
+			isa = PBXGroup;
+			children = (
+				65A2686A1C13BD67002C714F /* RA_Duty_LoggerTests.swift */,
+				65A2686C1C13BD67002C714F /* Info.plist */,
+			);
+			path = "RA Duty LoggerTests";
+			sourceTree = "<group>";
+		};
+		65A268741C13BD67002C714F /* RA Duty LoggerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65A268751C13BD67002C714F /* RA_Duty_LoggerUITests.swift */,
+				65A268771C13BD67002C714F /* Info.plist */,
+			);
+			path = "RA Duty LoggerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65A2684E1C13BD67002C714F /* RA Duty Logger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65A2687A1C13BD67002C714F /* Build configuration list for PBXNativeTarget "RA Duty Logger" */;
+			buildPhases = (
+				65A2684B1C13BD67002C714F /* Sources */,
+				65A2684C1C13BD67002C714F /* Frameworks */,
+				65A2684D1C13BD67002C714F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RA Duty Logger";
+			productName = "RA Duty Logger";
+			productReference = 65A2684F1C13BD67002C714F /* RA Duty Logger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65A268651C13BD67002C714F /* RA Duty LoggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65A2687D1C13BD67002C714F /* Build configuration list for PBXNativeTarget "RA Duty LoggerTests" */;
+			buildPhases = (
+				65A268621C13BD67002C714F /* Sources */,
+				65A268631C13BD67002C714F /* Frameworks */,
+				65A268641C13BD67002C714F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65A268681C13BD67002C714F /* PBXTargetDependency */,
+			);
+			name = "RA Duty LoggerTests";
+			productName = "RA Duty LoggerTests";
+			productReference = 65A268661C13BD67002C714F /* RA Duty LoggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65A268701C13BD67002C714F /* RA Duty LoggerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65A268801C13BD68002C714F /* Build configuration list for PBXNativeTarget "RA Duty LoggerUITests" */;
+			buildPhases = (
+				65A2686D1C13BD67002C714F /* Sources */,
+				65A2686E1C13BD67002C714F /* Frameworks */,
+				65A2686F1C13BD67002C714F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65A268731C13BD67002C714F /* PBXTargetDependency */,
+			);
+			name = "RA Duty LoggerUITests";
+			productName = "RA Duty LoggerUITests";
+			productReference = 65A268711C13BD67002C714F /* RA Duty LoggerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65A268471C13BD67002C714F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "iOS Decal";
+				TargetAttributes = {
+					65A2684E1C13BD67002C714F = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = YGWFWD9Z46;
+					};
+					65A268651C13BD67002C714F = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = YGWFWD9Z46;
+						TestTargetID = 65A2684E1C13BD67002C714F;
+					};
+					65A268701C13BD67002C714F = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = YGWFWD9Z46;
+						TestTargetID = 65A2684E1C13BD67002C714F;
+					};
+				};
+			};
+			buildConfigurationList = 65A2684A1C13BD67002C714F /* Build configuration list for PBXProject "RA Duty Logger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65A268461C13BD67002C714F;
+			productRefGroup = 65A268501C13BD67002C714F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65A2684E1C13BD67002C714F /* RA Duty Logger */,
+				65A268651C13BD67002C714F /* RA Duty LoggerTests */,
+				65A268701C13BD67002C714F /* RA Duty LoggerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65A2684D1C13BD67002C714F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A268601C13BD67002C714F /* LaunchScreen.storyboard in Resources */,
+				65A2685D1C13BD67002C714F /* Assets.xcassets in Resources */,
+				65A268581C13BD67002C714F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65A268641C13BD67002C714F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65A2686F1C13BD67002C714F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65A2684B1C13BD67002C714F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A2688A1C13CB76002C714F /* ReportItem.swift in Sources */,
+				65A268841C13C1BD002C714F /* MainScreenTableViewController.swift in Sources */,
+				65C7B6691C13ECF800589EBF /* TemplateItemTableViewController.swift in Sources */,
+				65A268881C13C402002C714F /* Report.swift in Sources */,
+				65A268861C13C339002C714F /* Template.swift in Sources */,
+				65A2685B1C13BD67002C714F /* RA_Duty_Logger.xcdatamodeld in Sources */,
+				65C7B6631C13DD4800589EBF /* NewTemplateTableViewController.swift in Sources */,
+				65C2A0DD1C14114000D07445 /* TitleEntryCell.swift in Sources */,
+				65A268531C13BD67002C714F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65A268621C13BD67002C714F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A2686B1C13BD67002C714F /* RA_Duty_LoggerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65A2686D1C13BD67002C714F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A268761C13BD67002C714F /* RA_Duty_LoggerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65A268681C13BD67002C714F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65A2684E1C13BD67002C714F /* RA Duty Logger */;
+			targetProxy = 65A268671C13BD67002C714F /* PBXContainerItemProxy */;
+		};
+		65A268731C13BD67002C714F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65A2684E1C13BD67002C714F /* RA Duty Logger */;
+			targetProxy = 65A268721C13BD67002C714F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65A268561C13BD67002C714F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65A268571C13BD67002C714F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65A2685E1C13BD67002C714F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65A2685F1C13BD67002C714F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65A268781C13BD67002C714F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65A268791C13BD67002C714F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65A2687B1C13BD67002C714F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "RA Duty Logger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosdecal.dangolden.RA-Duty-Logger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		65A2687C1C13BD67002C714F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "RA Duty Logger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosdecal.dangolden.RA-Duty-Logger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		65A2687E1C13BD67002C714F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RA Duty LoggerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosdecal.dangolden.RA-Duty-LoggerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RA Duty Logger.app/RA Duty Logger";
+			};
+			name = Debug;
+		};
+		65A2687F1C13BD67002C714F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RA Duty LoggerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosdecal.dangolden.RA-Duty-LoggerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RA Duty Logger.app/RA Duty Logger";
+			};
+			name = Release;
+		};
+		65A268811C13BD68002C714F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RA Duty LoggerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosdecal.dangolden.RA-Duty-LoggerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "RA Duty Logger";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		65A268821C13BD68002C714F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RA Duty LoggerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosdecal.dangolden.RA-Duty-LoggerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "RA Duty Logger";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65A2684A1C13BD67002C714F /* Build configuration list for PBXProject "RA Duty Logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65A268781C13BD67002C714F /* Debug */,
+				65A268791C13BD67002C714F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65A2687A1C13BD67002C714F /* Build configuration list for PBXNativeTarget "RA Duty Logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65A2687B1C13BD67002C714F /* Debug */,
+				65A2687C1C13BD67002C714F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65A2687D1C13BD67002C714F /* Build configuration list for PBXNativeTarget "RA Duty LoggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65A2687E1C13BD67002C714F /* Debug */,
+				65A2687F1C13BD67002C714F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65A268801C13BD68002C714F /* Build configuration list for PBXNativeTarget "RA Duty LoggerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65A268811C13BD68002C714F /* Debug */,
+				65A268821C13BD68002C714F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65A268591C13BD67002C714F /* RA_Duty_Logger.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65A2685A1C13BD67002C714F /* RA_Duty_Logger.xcdatamodel */,
+			);
+			currentVersion = 65A2685A1C13BD67002C714F /* RA_Duty_Logger.xcdatamodel */;
+			path = RA_Duty_Logger.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 65A268471C13BD67002C714F /* Project object */;
+}
