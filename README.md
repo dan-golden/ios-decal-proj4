@@ -11,11 +11,11 @@ and make writing duty logs simpler.
 ## Fetures
 * Ability to create custom templates for different types of duty reports
 * Automatically generate report form UI based on your template.
- * A template can have multiple items, each containing any subset of: 
-  * Date
-  * Start Time
-  * End Time
-  * Text
+  * A template can have multiple items, each containing any subset of: 
+   * Date
+   * Start Time
+   * End Time
+   * Text
 * Ability to save and edit draft reports
 * Ability to edit custom templates
 * Notifications remind you when it's time to send a report
