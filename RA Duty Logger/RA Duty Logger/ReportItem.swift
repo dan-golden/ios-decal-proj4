@@ -10,11 +10,12 @@ import UIKit
 
 class ReportItem: NSObject {
     private var date: NSDate?
-    private var time: NSDate?
-    private var title: String!
+    private var startTime: NSDate?
+    private var endTime: NSDate?
+    private var title: String?
     private var textField: String?
     
-    func setTitle(newTitle: String) {
+    func setTitle(newTitle: String?) {
         title = newTitle
     }
     
@@ -22,8 +23,12 @@ class ReportItem: NSObject {
         date = newDate
     }
     
-    func setTime(newTime: NSDate?) {
-        time = newTime
+    func setStartTime(newTime: NSDate?) {
+        startTime = newTime
+    }
+    
+    func setEndTime(newTime: NSDate?) {
+        endTime = newTime
     }
     
     func setTextField(text: String?) {
@@ -34,8 +39,12 @@ class ReportItem: NSObject {
         return !(date == nil)
     }
     
-    func needsTime() -> Bool {
-        return !(time == nil)
+    func needsStartTime() -> Bool {
+        return !(startTime == nil)
+    }
+    
+    func needsEndTime() -> Bool {
+        return !(endTime == nil)
     }
     
     func needsText() -> Bool {
@@ -44,6 +53,22 @@ class ReportItem: NSObject {
     
     func getTitle() -> String? {
         return title
+    }
+    
+    func getDate() -> NSDate? {
+        return date
+    }
+    
+    func getStartTime() -> NSDate? {
+        return startTime
+    }
+    
+    func getEndTime() -> NSDate? {
+        return endTime
+    }
+    
+    func getTextEntry() -> String? {
+        return textField
     }
     
 }

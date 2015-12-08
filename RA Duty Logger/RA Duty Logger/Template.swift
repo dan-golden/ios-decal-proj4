@@ -24,6 +24,10 @@ class Template: NSObject {
     func getItems() -> [ReportItem] {
         return items
     }
+    
+    func setItems(templateItems: [ReportItem]) {
+        items = templateItems
+    }
 
     func getTitle() -> String {
         return title

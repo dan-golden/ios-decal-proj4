@@ -10,19 +10,23 @@ import UIKit
 
 protocol TemplateItemDelegate {
     func toggleDate(on: Bool)
-    func toggleTime(on: Bool)
+    func toggleStartTime(on: Bool)
+    func toggleEndTime(on: Bool)
     func toggleText(on: Bool)
     func setTemplateItemTitle(title: String?)
     func getDateSwitchValue() -> Bool
-    func getTiimeSwitchValue() -> Bool
+    func getStartTimeSwitchValue() -> Bool
+    func getEndTimeSwitchValue() -> Bool
     func getTextSwitchValue() -> Bool
     func getTemplateItemTitle() -> String
 }
 
+/* View Controller for a new template item */
 class TemplateItemTableViewController: UITableViewController, TemplateItemDelegate {
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var dateSwitch: UISwitch!
-    @IBOutlet weak var timeSwitch: UISwitch!
+    @IBOutlet weak var timeStartSwitch: UISwitch!
+    @IBOutlet weak var timeEndSwitch: UISwitch!
     @IBOutlet weak var textSwitch: UISwitch!
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -30,7 +34,7 @@ class TemplateItemTableViewController: UITableViewController, TemplateItemDelega
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
 
     func toggleDate(on: Bool) {
@@ -41,8 +45,12 @@ class TemplateItemTableViewController: UITableViewController, TemplateItemDelega
         textSwitch.on = on
     }
     
-    func toggleTime(on: Bool) {
-        timeSwitch.on = on
+    func toggleStartTime(on: Bool) {
+        timeStartSwitch.on = on
+    }
+    
+    func toggleEndTime(on: Bool) {
+        timeEndSwitch.on = on
     }
     
     func setTemplateItemTitle(title: String?) {
@@ -57,8 +65,12 @@ class TemplateItemTableViewController: UITableViewController, TemplateItemDelega
         return textSwitch.on
     }
     
-    func getTiimeSwitchValue() -> Bool {
-        return timeSwitch.on
+    func getStartTimeSwitchValue() -> Bool {
+        return timeStartSwitch.on
+    }
+    
+    func getEndTimeSwitchValue() -> Bool {
+        return timeEndSwitch.on
     }
     
     func getTemplateItemTitle() -> String {

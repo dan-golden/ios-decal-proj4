@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6593D9D71C14EC82003D3F71 /* ReportItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6593D9D61C14EC82003D3F71 /* ReportItemCell.swift */; };
+		6593D9D91C14ECA4003D3F71 /* ReportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6593D9D81C14ECA4003D3F71 /* ReportTableViewController.swift */; };
 		65A268531C13BD67002C714F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A268521C13BD67002C714F /* AppDelegate.swift */; };
 		65A268581C13BD67002C714F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A268561C13BD67002C714F /* Main.storyboard */; };
 		65A2685B1C13BD67002C714F /* RA_Duty_Logger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65A268591C13BD67002C714F /* RA_Duty_Logger.xcdatamodeld */; };
@@ -21,6 +23,7 @@
 		65C2A0DD1C14114000D07445 /* TitleEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2A0DC1C14114000D07445 /* TitleEntryCell.swift */; };
 		65C7B6631C13DD4800589EBF /* NewTemplateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C7B6621C13DD4800589EBF /* NewTemplateTableViewController.swift */; };
 		65C7B6691C13ECF800589EBF /* TemplateItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C7B6681C13ECF800589EBF /* TemplateItemTableViewController.swift */; };
+		65F4FE551C166D9E004779D8 /* SentReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F4FE541C166D9E004779D8 /* SentReportViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6593D9D61C14EC82003D3F71 /* ReportItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportItemCell.swift; sourceTree = "<group>"; };
+		6593D9D81C14ECA4003D3F71 /* ReportTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTableViewController.swift; sourceTree = "<group>"; };
 		65A2684F1C13BD67002C714F /* RA Duty Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RA Duty Logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A268521C13BD67002C714F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A268571C13BD67002C714F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +66,7 @@
 		65C2A0DC1C14114000D07445 /* TitleEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleEntryCell.swift; sourceTree = "<group>"; };
 		65C7B6621C13DD4800589EBF /* NewTemplateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTemplateTableViewController.swift; sourceTree = "<group>"; };
 		65C7B6681C13ECF800589EBF /* TemplateItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TemplateItemTableViewController.swift; path = ../TemplateItemTableViewController.swift; sourceTree = "<group>"; };
+		65F4FE541C166D9E004779D8 /* SentReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentReportViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,9 @@
 				65A268611C13BD67002C714F /* Info.plist */,
 				65A268591C13BD67002C714F /* RA_Duty_Logger.xcdatamodeld */,
 				65A268831C13C1BD002C714F /* MainScreenTableViewController.swift */,
+				65F4FE541C166D9E004779D8 /* SentReportViewController.swift */,
+				6593D9D61C14EC82003D3F71 /* ReportItemCell.swift */,
+				6593D9D81C14ECA4003D3F71 /* ReportTableViewController.swift */,
 				65C2A0DC1C14114000D07445 /* TitleEntryCell.swift */,
 				65A268891C13CB76002C714F /* ReportItem.swift */,
 				65A268871C13C402002C714F /* Report.swift */,
@@ -282,13 +291,16 @@
 			files = (
 				65A2688A1C13CB76002C714F /* ReportItem.swift in Sources */,
 				65A268841C13C1BD002C714F /* MainScreenTableViewController.swift in Sources */,
+				65F4FE551C166D9E004779D8 /* SentReportViewController.swift in Sources */,
 				65C7B6691C13ECF800589EBF /* TemplateItemTableViewController.swift in Sources */,
 				65A268881C13C402002C714F /* Report.swift in Sources */,
 				65A268861C13C339002C714F /* Template.swift in Sources */,
 				65A2685B1C13BD67002C714F /* RA_Duty_Logger.xcdatamodeld in Sources */,
 				65C7B6631C13DD4800589EBF /* NewTemplateTableViewController.swift in Sources */,
 				65C2A0DD1C14114000D07445 /* TitleEntryCell.swift in Sources */,
+				6593D9D71C14EC82003D3F71 /* ReportItemCell.swift in Sources */,
 				65A268531C13BD67002C714F /* AppDelegate.swift in Sources */,
+				6593D9D91C14ECA4003D3F71 /* ReportTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
